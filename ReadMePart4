@@ -1,0 +1,23 @@
+KWIC Techincal Summary
+What criteria did you use to decompose the first design?
+•	I first broke down the basics of what is happening into empty methods
+•	After I finished created a separate class for managing a files
+What criteria did you use to decompose the second design?
+•	I utilized the FileManagement class from the first version
+•	I used a collection that sorts on the way out, so it can be stopped at any line
+Which design is more resilient to change? And why?
+•	Unfortunately the first design is more resilient to change. Although I like what the priority queue has to offer for writing out as it goes for example using this concurrently in the future it also is rigid currently on how the collection is used with the FileManager
+What would have to change in the first design/implementation if the file were changed out for a database?
+•	I would only need to change the file manager to read inputs from a database instead and write to a database (they use the same file manager)
+What would have to change in the second design/implementation if the file were changed out for a database?
+•	I would only need to change the file manager to read inputs from a database instead and write to a database. (they use the same file manager)
+What would have to change in the first vs second design/implementation if we wanted to use a graphical user interface instead of the traditional console UI (System.out)?
+•	I would need to create a method in both Part 1 and Part 2 that returns their sorted documents.
+Identify another change that may happen in the future, and how does design 1 compare to design 2 when it comes to impact of the change?
+•	Another change would be to rotate the lines again and then reorganize. Design one would have to write an additional line on main run the shift method again where design two needs to add a line inside of its shift method. Both designs since they use the file manager could run completely over again using the sorted text as inputs.
+Which design/implementation is easier to understand?
+•	I think design one is easier to understand, but only because the method for sorting is clear within main vs Part Two really is sorting them on exit during File Manager
+Which design/implementation is better performing?
+•	Both operate at the same O(n log n)
+How does the principle of information hiding relate to all of this?
+•	In both Part One and Part Two they both have a File Manager that hides the reading and writing of the file. This essentially leaves the class with only the essentials of what it is trying to accomplish which is the actual sort.
